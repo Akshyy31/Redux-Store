@@ -23,12 +23,9 @@ function reducer(state = initialState, action) {
   }
 }
 
-
-store.subscribe(()=>{
-    document.getElementById("h1Count").innerText = store.getState().count
-})
-
-
+store.subscribe(() => {
+  document.getElementById("h1Count").innerText = store.getState().count;
+});
 
 console.log("store", store);
 const state = store.getState();
